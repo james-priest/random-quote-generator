@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FCC Random Quote Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'> -->
+        <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header></header>
+        <main role="main" id="main">
+            <section class="container">
+                <h1>Random Quote Generator</h1>
+                <p>
+                    Press the button to generate a random quote. This uses jQuery to trigger an asynchronous Ajax call using JSONP format.
+                </p>
+
+                <blockquote class="quote-container">
+                    <div class="quote-text"></div>
+                    <div class="quote-author"></div>
+                </blockquote>
+
+                <button id="get-quote" class="">New Quote</button>
+                <div id="tweet-btn-container">
+                    <a href="https://twitter.com/share" class="twitter-share-button"
+                    data-text="Random Quote Generator is working!🙌✨😋 Check it out.😁"
+                    data-url="https://codepen.io/james-priest/full/RZdGNo/"
+                    data-via="james_priest1" data-hashtags="100DaysOfCode"
+                    data-show-count="false">Tweet</a>
+                </div>
+                                    
+            </section>
+        </main>
+        <footer></footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script src="https://use.fontawesome.com/b8e54d5fef.js"></script> -->
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(document).ready(function() {
+                init();
+            });
+        </script>
+    </body>
+</html>
