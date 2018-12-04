@@ -1,6 +1,6 @@
 /* background from http://heropatterns.com (thanks Thea! @highflyer910) */
 /* CSS Reset */
-html, body, h1, h2, h3, p, ol, ul, li, a { padding: 0; border: 0; margin: 0; font-size: 100%; font: inherit; }
+html, body, h1, h2, h3, p, ol, ul, li, a { padding: 0; border: 0; margin: 0; font-size: 20px; font: inherit; }
 h1 { margin: 10px 0 15px 0; font-size: 1.6em; font-weight: bold;}
 h2 { margin: 10px 0 25px 0; font-size: 1.4em; font-weight: bold;}
 h3 { margin: 15px 0 15px 0; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid #ccc; padding-bottom: 3px; }
@@ -13,15 +13,19 @@ body {
     color: #111;
     font-family: Tahoma, Geneva, sans-serif;
 }
-h1 { font-weight: normal;}
+h1 { font-weight: normal; }
 p { 
   color: #333;
-  font-size: 0.8em;
+  font-size: 0.9em;
+}
+#main {
+  display: flex;
+  justify-content: center;
 }
 .container {
   box-sizing: border-box;
-  width: 500px;
-  margin: 20px auto;
+  max-width: 500px;
+  margin: 20px;
   background-color: #eee;
   padding: 20px 50px;
   border-radius: 20px;
@@ -51,6 +55,7 @@ p {
   position: absolute;
   left: 0;
   color: #9C92AC;
+  color: #666;
   font-size: 46px;
 }
 .quote-text::after {
@@ -63,10 +68,11 @@ p {
   right: 0;
   bottom:44px;
   color: #9C92AC;
+  color: #666;
   font-size: 46px;
 }
 .quote-text {
-  color: #333;
+  color: #095f00;
   padding: 30px 20px 60px 30px;
   text-align: left;
   text-align: left;
@@ -79,7 +85,7 @@ p {
 	position: absolute;
 	bottom: 10px;
   right: 0;
-  color: #9C92AC;
+  color: #333;
 	margin-bottom: 10px;
 }
 .quote-author::before {
@@ -94,7 +100,7 @@ button {
   box-shadow: 1px 1px 1px #666;
   cursor: pointer;
   font-family: Tahoma, Geneva, sans-serif;
-  color:#666;
+  color:#095f00;
   background-color: #ddd;
   margin: 0 0 12px 0;
   transition: all 0.06s ease-in-out;
